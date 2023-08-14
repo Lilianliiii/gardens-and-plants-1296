@@ -21,3 +21,14 @@ Garden.create!(
 )
 
 puts "Gardens created!"
+
+puts "Creating Tags"
+Tag.destroy_all
+
+names = ["Leafy", "Fruit", "Tree", "Green"]
+
+names.each do |name|
+  Tag.create(name: name)
+end
+
+puts "Tags created!"
